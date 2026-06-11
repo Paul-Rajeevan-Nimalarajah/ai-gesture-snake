@@ -1,4 +1,6 @@
-# 🚀 AI Space Snake — Gesture-Controlled Snake Game
+# AI Space Snake — Gesture-Controlled Snake Game
+
+This repository was developed as a teaching resource to help students learn web development concepts including JavaScript, AI integration in the browser, and continuous deployment.
 
 A Snake game you steer with your **hand**. Your webcam watches your index
 finger using **Google MediaPipe Hand Landmarker** (an AI model that runs
@@ -9,7 +11,7 @@ No backend. No API key. No installation. Just HTML, CSS and JavaScript.
 
 ---
 
-## 🎮 How to play
+## How to play
 
 1. Allow webcam access when the page asks.
 2. Hold **one hand** in front of the camera and point with your **index finger**.
@@ -18,12 +20,12 @@ No backend. No API key. No installation. Just HTML, CSS and JavaScript.
    - finger near the **bottom** → **down**
    - finger near the **left / right** → **left / right**
    - finger in the **center circle** → keep the current course
-4. Collect 💎 crystals, avoid the walls and your own trail.
+4. Collect crystals, avoid the walls and your own trail.
 5. Backup controls: **arrow keys** or **WASD**. Press **P** or **Space** to pause.
 
 ---
 
-## ✏️ Your task (required)
+## Your task (required)
 
 Open `script.js`. At the very top you will find the
 **STUDENT CUSTOMIZATION AREA**. Change **at least these three values**:
@@ -34,19 +36,19 @@ gameTitle: "Your Own Game Title",
 snakeSpeed: 140,            // try a different number
 ```
 
-Commit your change — this proves you edited real JavaScript. 🎉
+Commit your change — this proves you edited real JavaScript.
 
 **Bonus challenges (optional):**
 - Level 2: uncomment the extra food type in `FOOD_TYPES`, or invent your own
   (new emoji + new point value).
 - Level 3: change `gridSize`, `winningScore`, or the colors in `style.css`.
 
-⚠️ You do **not** need to touch `gesture-control.js` — that file contains the
+You do **not** need to touch `gesture-control.js` — that file contains the
 AI / webcam logic and works as-is.
 
 ---
 
-## 🌍 Deploy your fork to Vercel
+## Deploy your fork to Vercel
 
 1. Click **Fork** at the top of this GitHub repository.
 2. Edit `script.js` in your fork (pencil icon on GitHub) and **commit**.
@@ -61,14 +63,25 @@ Change one more value in `script.js` on GitHub and commit again.
 Watch Vercel rebuild automatically — your live site updates in seconds.
 That is **continuous deployment**.
 
-> 📷 The webcam only works on `https://` links (Vercel and GitHub Pages
+> The webcam only works on `https://` links (Vercel and GitHub Pages
 > both provide this) or on `localhost`. Opening `index.html` directly from
 > your file manager will not work because the page uses JavaScript modules —
 > use a live server or the deployed link.
 
+### Cross-origin (CORS) error when opening locally?
+
+If you see a **cross-origin** or **CORS** error in the browser console, it means you opened `index.html` directly as a file (`file://...`) instead of through a web server. The browser blocks local file requests for security reasons.
+
+**Fix — use VS Code Live Server:**
+
+1. Install the **Live Server** extension in VS Code (search `ritwickdey.liveserver` in the Extensions panel).
+2. Open the project folder in VS Code.
+3. Right-click `index.html` in the Explorer panel and choose **"Open with Live Server"**.
+4. The game will open at `http://127.0.0.1:5500` — cross-origin errors gone.
+
 ---
 
-## 📁 Project structure
+## Project structure
 
 | File                 | What it does                                | Edit it? |
 | -------------------- | ------------------------------------------- | -------- |
@@ -77,7 +90,7 @@ That is **continuous deployment**.
 | `script.js`          | Game logic + **your customization area**    | **Yes**  |
 | `gesture-control.js` | AI webcam hand tracking (MediaPipe)         | No       |
 
-## 🧠 How the AI part works
+## How the AI part works
 
 ```
 Webcam frame
