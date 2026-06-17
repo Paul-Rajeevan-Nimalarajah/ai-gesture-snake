@@ -16,7 +16,7 @@ const GAME_CONFIG = {
   playerName: "Paul Rajeevan",   // 👈 put YOUR name here
   gameTitle: "AI Space Snake",    // 👈 invent your own title
 
-  snakeSpeed: 100,        // milliseconds per move. BIGGER = SLOWER. Try 260 for easy mode, 140 for fast!
+  snakeSpeed: 300,        // milliseconds per move. BIGGER = SLOWER. Try 260 for easy mode, 140 for fast!
   pointsPerCrystal: 10,   // score for each crystal collected
   winningScore: 200,      // reach this score to complete the mission
   levelUpEvery: 5,        // crystals needed to advance one level
