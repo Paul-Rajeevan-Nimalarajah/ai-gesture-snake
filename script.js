@@ -21,8 +21,8 @@ const GAME_CONFIG = {
   winningScore: 200,      // reach this score to complete the mission
   levelUpEvery: 5,        // crystals needed to advance one level
 
-  snakeSymbol: "🚀",      // the ship (snake head). Try "🐍" "🛸" "🦖"
-  crystalSymbol: "💎",    // the food. Try "⭐" "⚡" "🍩" "🛰️"
+  snakeSymbol: "🗣️",      // the ship (snake head). Try "🐍" "🛸" "🦖"
+  crystalSymbol: "🍏",    // the food. Try "⭐" "⚡" "🍩" "🛰️"
 
   snakeColor: "#5eead4",  // body trail color (any CSS color)
   gridSize: 21,           // squares per side. Bigger grid = harder game
